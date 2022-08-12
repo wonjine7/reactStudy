@@ -1,10 +1,10 @@
 import {Fragment} from 'react'
 
 function App() {
+  const name = '리액트2';
   return (
     <>
-      <h1>리엑트1일</h1>
-      <h2>오늘부터 시작</h2>
+        {name === '리액트'&&<h1>리액트입니다</h1>}
     </>
   );
 }
