@@ -1,12 +1,18 @@
-import {Fragment} from 'react'
-
-function App() {
-  const name = '리액트2';
+import React from 'react';
+ 
+const MyComponent = props => {
+  const { name, children } = props;
   return (
-    <>
-        {name === '리액트'&&<h1>리액트입니다</h1>}
-    </>
+    <div>
+      안녕하세요, 제 이름은 {name}입니다. <br />
+      children 값은 {children}
+      입니다.
+    </div>
   );
-}
-
-export default App;
+};
+ 
+MyComponent.defaultProps = {
+  name: '기본 이름'
+};
+ 
+export default MyComponent;
