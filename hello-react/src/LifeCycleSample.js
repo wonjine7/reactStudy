@@ -78,7 +78,7 @@ componentDidUpdate(prevProps, prevState, snapshot) {
 
 
 render() {
-    console.log(‘render‘);
+    console.log('render');
 
 
 
